@@ -10,7 +10,7 @@ public class compare
         int b = o.nextInt();
         System.out.println("Enter the Third number: ");
         int c = o.nextInt();
-        int larg = (a>b)?(a>c?a:c):((c>b)?c:b);
+        int larg = ((a>b)&(a>c))?(a):((b>c?b:c));
         System.out.println("The largest number is "+ larg);
         o.close();
     }
