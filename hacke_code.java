@@ -1,16 +1,12 @@
-import java.util.Scanner;
-
-import javax.sound.midi.Soundbank;
 
 /**
  * hacke_code
  */
-//import java.util.*;
+import java.util.*;
 public class hacke_code 
 {
     public static void main(String[] args) 
     {
-    long start = System.nanoTime();
     String a[] = {"", "one","two","three","four","five","six","seven","eight","nine"};
     Scanner o = new Scanner(System.in);
     System.out.println("Enter the lower limit: ");
@@ -19,30 +15,7 @@ public class hacke_code
     int m = o.nextInt();
     for (int i = n; i <= m; i++) 
     {
-       while (i<10) 
-       {
-            System.out.println(a[i]); 
-            i++;
-       }
-      if (i%2 == 0) 
-      {
-        System.out.println("even");
-      }
-      else
-      {
-        System.out.println("odd");
-      }
-    }
-    o.close();
-    long duration = (System.nanoTime() - start);
-    System.out.println("duration = " + duration + " nanoseconds" );
-}
-}
-
-/*
-  for(int i = n; i <= m; i++)
-  {
-    if(i < 10)
+      if(i < 10)
     {
         System.out.println(a[i]);
     }
@@ -57,5 +30,8 @@ public class hacke_code
             System.out.println("odd");
         }
     }
-  }
- */
+}
+o.close();
+}
+}
+
